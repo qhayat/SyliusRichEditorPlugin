@@ -8,11 +8,11 @@ services:
             string $monsieurbizRicheditorDefaultElement: '%monsieurbiz.richeditor.config.default_element%'
             string $monsieurbizRicheditorDefaultElementDataField: '%monsieurbiz.richeditor.config.default_element_data_field%'
             Gaufrette\FilesystemInterface $filesystem: '@gaufrette.monsieurbiz_rich_editor_fixture_file_filesystem'
-
+    
     MonsieurBiz\SyliusRichEditorPlugin\Controller\:
         resource: '../../Controller'
         tags: ['controller.service_arguments']
-        
+
     MonsieurBiz\SyliusRichEditorPlugin\Fixture\:
         resource: '../../Fixture'
 
